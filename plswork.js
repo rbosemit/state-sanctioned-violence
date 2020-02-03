@@ -16,7 +16,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-/*
+
 $( window ).on( "load", function() { 
 
 	function getRandomInt(min, max) {
@@ -48,13 +48,12 @@ $( window ).on( "load", function() {
 		})
 	}
 
-	addImages(15);
+	addImages(8);
 	makeDraggable();
 
 	
 
-});*/
-
+});
 
 $( window ).on( "load", function() { 
 
@@ -87,7 +86,7 @@ $( window ).on( "load", function() {
 		})
 	}
 
-	addImages(15);
+	addImages(11);
 	makeDraggable();
 
 	
