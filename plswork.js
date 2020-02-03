@@ -55,43 +55,7 @@ $( window ).on( "load", function() {
 
 });
 
-$( window ).on( "load", function() { 
 
-	function getRandomInt(min, max) {
-	    min = Math.ceil(min);
-	    max = Math.floor(max);
-	    return Math.floor(Math.random() * (max - min + 1)) + min;
-	}
-
-	var image = '<img src="bjp-logo-03.png" alt="BJP logo">';
-
-
-	function addImages( numOfImages ) {
-		for (var i = 0; i < numOfImages; i++) {
-			var windowHeight = $(window).height();
-			var windowWidth = $(window).width();
-			var sizeOffset = getRandomInt(100, 700);
-			var sizeOffsetFormatted = sizeOffset + "px";
-			var topOffset = getRandomInt(-sizeOffset, windowHeight) + "px";
-			var leftOffset = getRandomInt(-sizeOffset, windowWidth) + "px";
-			
-			$(image).css({ "position": "absolute", "top": topOffset, "left": leftOffset, "z-index": 1, "width": sizeOffsetFormatted  }).insertAfter(".container");
-			}
-
-		}
-
-	function makeDraggable() {
-		$("img").each( function() {
-			$(this).draggable({scroll: false});
-		})
-	}
-
-	addImages(11);
-	makeDraggable();
-
-	
-
-});
 
 $( window ).on( "load", function() { 
 
